@@ -2,3 +2,28 @@
 
 .experience-list{display:grid;gap:0}.experience-item{display:grid;grid-template-columns:1fr auto;gap:.35rem 2rem;padding:1.5rem 0;border-top:1px solid var(--line)}.experience-item h3{font:700 1.2rem "Space Grotesk";margin:0}.experience-item div p,.experience-item>p,.experience-item>span{color:var(--muted);margin:.25rem 0 0}.experience-item>p{grid-column:1/-1;max-width:800px}.experience-item>span{font-size:.86rem;white-space:nowrap}@media(max-width:760px){.experience-item{grid-template-columns:1fr}.experience-item>p{grid-column:auto}}
 \n.project-link{display:inline-flex;align-items:center;width:max-content;margin-top:1.25rem;color:var(--accent);font-weight:700;text-decoration:none}.project-link:hover{text-decoration:underline}\n
+/* Featured AssetFlow project */
+.featured-project-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.featured-project-content {
+  min-width: 0;
+}
+
+.featured-project-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .featured-project-layout {
+    grid-template-columns: 1fr;
+  }
+}
